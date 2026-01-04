@@ -2,46 +2,71 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Welcome to Study in China Guide
 
-Let's discover **Docusaurus in less than 5 minutes**.
+🎓 **Your comprehensive guide to studying in China**
 
-## Getting Started
+This documentation will help you navigate every step of your journey as an international student in China, from initial application to graduation and beyond.
 
-Get started by **creating a new site**.
+## 🌟 Why Choose China?
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+China has become one of the world's most popular destinations for international students, offering:
 
-### What you'll need
+- **World-class education** at affordable costs
+- **Rich cultural experience** in one of the world's oldest civilizations
+- **Career opportunities** in the world's second-largest economy
+- **Modern infrastructure** and safe living environment
 
-- [Node.js](https://nodejs.org/en/download/) version 20.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+## 📚 What You'll Find Here
 
-## Generate a new site
+### Getting Started
+- **Application Process**: Step-by-step guide to applying to Chinese universities
+- **Visa Requirements**: Student visa (X1/X2) application procedures
+- **Scholarships**: Available funding opportunities for international students
 
-Generate a new Docusaurus site using the **classic template**.
+### Pre-Departure
+- **What to Pack**: Essential items and what to buy in China
+- **Health Preparation**: Vaccinations and medical checkups
+- **Financial Planning**: Budgeting for tuition and living expenses
 
-The classic template will automatically be added to your project after you run the command:
+### Arrival in China
+- **First Week Checklist**: Essential tasks upon arrival
+- **Registration Process**: Police registration and university enrollment
+- **Setting Up Essentials**: Bank accounts, SIM cards, and accommodation
 
-```bash
-npm init docusaurus@latest my-website classic
-```
+### Daily Life
+- **Campus Life**: Navigating university facilities and student activities
+- **Transportation**: Getting around Chinese cities (metro, buses, bikes)
+- **Food & Dining**: Exploring Chinese cuisine and managing dietary needs
+- **Healthcare**: Medical insurance and accessing healthcare services
+- **Language Learning**: Resources for learning Mandarin Chinese
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+### Academic Life
+- **Classroom Culture**: Understanding Chinese teaching styles
+- **Study Tips**: Succeeding in your academic program
+- **Research Opportunities**: Getting involved in academic research
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+### Beyond Studies
+- **Internships**: Finding work experience opportunities
+- **Cultural Activities**: Exploring China's rich heritage
+- **Travel Guide**: Discovering China's diverse regions
+- **Career Development**: Building your career in China or globally
 
-## Start your site
+## 🚀 Quick Start
 
-Run the development server:
+New to studying in China? Start with these essential guides:
 
-```bash
-cd my-website
-npm run start
-```
+1. **[Application Guide](application-process.md)** - Start your journey
+2. **[Visa Guide](visa-requirements.md)** - Understand visa requirements
+3. **[First Week in China](first-week.md)** - What to do when you arrive
+4. **[Essential Apps](essential-apps.md)** - Must-have apps for daily life
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
+## 🤝 Need Help?
 
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
+- **FAQ**: Check our frequently asked questions
+- **Community**: Connect with other international students
+- **Contact**: Reach out to our support team
 
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+---
+
+**Ready to begin your Chinese adventure?** Start exploring our guides and prepare for an unforgettable experience!

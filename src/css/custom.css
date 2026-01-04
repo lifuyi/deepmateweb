@@ -6,25 +6,102 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-color-primary: #ff6b6b;
+  --ifm-color-primary-dark: #ff5252;
+  --ifm-color-primary-darker: #ff4040;
+  --ifm-color-primary-darkest: #ff1e1e;
+  --ifm-color-primary-light: #ff8484;
+  --ifm-color-primary-lighter: #ff9696;
+  --ifm-color-primary-lightest: #ffb8b8;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  --ifm-font-size-base: 17px;
+  --ifm-line-height-base: 1.7;
+  --ifm-spacing-vertical: 1.6rem;
+  --ifm-navbar-background-color: #ffffff;
+  --ifm-navbar-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+  --ifm-global-radius: 12px;
+  --ifm-card-border-radius: 16px;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
+  --ifm-color-primary: #4ecdc4;
+  --ifm-color-primary-dark: #3abdb4;
+  --ifm-color-primary-darker: #2eb3aa;
+  --ifm-color-primary-darkest: #259389;
+  --ifm-color-primary-light: #62d3cc;
+  --ifm-color-primary-lighter: #6ed7d0;
+  --ifm-color-primary-lightest: #8adfd9;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-navbar-background-color: #1a1a1a;
+}
+
+/* Custom styles for international student theme */
+.hero {
+  background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #fecfef 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="white" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="white" opacity="0.1"/><circle cx="50" cy="10" r="0.5" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+  pointer-events: none;
+}
+
+[data-theme='dark'] .hero {
+  background: linear-gradient(135deg, #1a2980 0%, #26d0ce 100%);
+}
+
+.navbar {
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.9) !important;
+}
+
+[data-theme='dark'] .navbar {
+  background-color: rgba(26, 26, 26, 0.9) !important;
+}
+
+.button--primary {
+  border-radius: 50px;
+  padding: 12px 30px;
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+  transition: all 0.3s ease;
+}
+
+.button--primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4);
+}
+
+.card {
+  border: none;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+[data-theme='dark'] .card {
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+.markdown h1, .markdown h2, .markdown h3 {
+  font-weight: 700;
+}
+
+/* Add smooth scrolling */
+html {
+  scroll-behavior: smooth;
 }

@@ -3,21 +3,350 @@
  * and scoped locally.
  */
 
-.heroBanner {
-  padding: 4rem 0;
-  text-align: center;
+.heroSection {
   position: relative;
+  height: 600px;
   overflow: hidden;
 }
 
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
-  }
+.heroContent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.heroText {
+  text-align: center;
+  max-width: 850px;
+  width: 90%;
+  padding: 4rem 3rem;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(15px);
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.4);
+  margin: 0 auto;
+}
+
+.heroTitle {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: white !important;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  line-height: 1.2;
+}
+
+.heroSubtitle {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.95);
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+  line-height: 1.4;
 }
 
 .buttons {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 996px) {
+  .heroSection {
+    height: 500px;
+  }
+  
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+  
+  .heroSubtitle {
+    font-size: 1.2rem;
+  }
+  
+  .heroText {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .heroSection {
+    height: 400px;
+  }
+  
+  .heroTitle {
+    font-size: 2rem;
+  }
+  
+  .heroSubtitle {
+    font-size: 1rem;
+  }
+}
+
+/* Categories Section */
+.categoriesSection {
+  padding: 5rem 0;
+  background-color: var(--ifm-background-color);
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, var(--ifm-color-primary) 0%, var(--ifm-color-primary-light) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.sectionSubtitle {
+  font-size: 1.2rem;
+  text-align: center;
+  color: var(--ifm-color-emphasis-700);
+  margin-bottom: 3rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.categoryCard {
+  display: block;
+  padding: 2rem;
+  height: 100%;
+  border-radius: 16px;
+  background: var(--ifm-card-background-color);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  text-decoration: none !important;
+  color: var(--ifm-font-color-base) !important;
+  border: 1px solid var(--ifm-color-emphasis-200);
+}
+
+[data-theme='dark'] .categoryCard {
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  border-color: var(--ifm-color-emphasis-300);
+}
+
+.categoryCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+  text-decoration: none;
+}
+
+.categoryIcon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.categoryCard h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--ifm-font-color-base);
+}
+
+.categoryCard p {
+  color: var(--ifm-color-emphasis-700);
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Why Study in China Section */
+.whySection {
+  padding: 5rem 0;
+  background: linear-gradient(135deg, var(--ifm-color-primary-lightest) 0%, var(--ifm-background-color) 100%);
+}
+
+[data-theme='dark'] .whySection {
+  background: linear-gradient(135deg, var(--ifm-color-primary-darkest) 0%, var(--ifm-background-color) 100%);
+}
+
+.benefitCard {
+  padding: 2rem;
+  height: 100%;
+  border-radius: 16px;
+  background: var(--ifm-card-background-color);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  border: 1px solid var(--ifm-color-emphasis-200);
+}
+
+[data-theme='dark'] .benefitCard {
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  border-color: var(--ifm-color-emphasis-300);
+}
+
+.benefitIcon {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.benefitCard h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: var(--ifm-font-color-base);
+}
+
+.benefitCard p {
+  color: var(--ifm-color-emphasis-700);
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Stats Section */
+.statsSection {
+  padding: 4rem 0;
+  background: var(--ifm-background-color);
+}
+
+.statNumber {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--ifm-color-primary);
+  margin-bottom: 0.5rem;
+  background: linear-gradient(135deg, var(--ifm-color-primary) 0%, var(--ifm-color-primary-light) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.statLabel {
+  font-size: 1.1rem;
+  color: var(--ifm-color-emphasis-700);
+  font-weight: 500;
+}
+
+/* Quick Start Guides Section */
+.quickStartSection {
+  padding: 5rem 0;
+  background: linear-gradient(135deg, var(--ifm-color-primary-lightest) 0%, var(--ifm-background-color) 50%);
+}
+
+[data-theme='dark'] .quickStartSection {
+  background: linear-gradient(135deg, var(--ifm-color-primary-darkest) 0%, var(--ifm-background-color) 50%);
+}
+
+.guideCard {
+  display: block;
+  padding: 2.5rem 2rem;
+  height: 100%;
+  border-radius: 20px;
+  background: var(--ifm-card-background-color);
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  text-decoration: none !important;
+  color: var(--ifm-font-color-base) !important;
+  border: 2px solid transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+[data-theme='dark'] .guideCard {
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
+}
+
+.guideCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  border-color: var(--ifm-color-primary-light);
+  text-decoration: none;
+}
+
+.guideCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--ifm-color-primary) 0%, var(--ifm-color-primary-light) 100%);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.guideCard:hover::before {
+  transform: scaleX(1);
+}
+
+.guideIcon {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.guideCard:hover .guideIcon {
+  transform: scale(1.1);
+}
+
+.guideCard h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: var(--ifm-font-color-base);
+  font-weight: 600;
+}
+
+.guideCard p {
+  color: var(--ifm-color-emphasis-700);
+  margin: 0 0 1.5rem 0;
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+.readMore {
+  color: var(--ifm-color-primary);
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.guideCard:hover .readMore {
+  gap: 1rem;
+  color: var(--ifm-color-primary-dark);
+}
+
+/* CTA Section */
+.ctaSection {
+  padding: 6rem 0;
+  text-align: center;
+  background: linear-gradient(135deg, var(--ifm-color-primary) 0%, var(--ifm-color-primary-light) 100%);
+  color: white;
+}
+
+.ctaTitle {
+  font-size: 2.5rem;
+  color: white !important;
+  margin-bottom: 1rem;
+}
+
+.ctaSubtitle {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ctaSection :global(.button--primary) {
+  background-color: white;
+  color: var(--ifm-color-primary);
+  border: none;
+}
+
+.ctaSection :global(.button--primary:hover) {
+  background-color: rgba(255, 255, 255, 0.9);
+  transform: translateY(-2px);
 }

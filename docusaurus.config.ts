@@ -5,8 +5,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'Study in China',
+  tagline: 'Your Gateway to Chinese Universities',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -73,11 +73,22 @@ const config: Config = {
     image: 'img/docusaurus-social-card.jpg',
     colorMode: {
       respectPrefersColorScheme: true,
+      disableSwitch: false,
+    },
+    metadata: [
+      {name: 'keywords', content: 'documentation, AI, development, deepmate'},
+      {name: 'description', content: 'DeepMate - AI-Powered Development Platform Documentation'},
+    ],
+    docs: {
+      sidebar: {
+        hideable: true,
+        autoCollapseCategories: true,
+      },
     },
     navbar: {
-      title: 'My Site',
+      title: 'Study in China',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'Study in China Logo',
         src: 'img/logo.svg',
       },
       items: [
@@ -85,15 +96,35 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: '📖 Guide',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
+        {to: '/blog', label: '📝 Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
+          type: 'dropdown',
+          label: '🔗 Resources',
+          position: 'left',
+          items: [
+            {
+              label: 'Universities',
+              to: '/docs/universities',
+            },
+            {
+              label: 'Scholarships',
+              to: '/docs/scholarships',
+            },
+            {
+              label: 'Visa Info',
+              to: '/docs/visa',
+            },
+          ],
+        },
+        {
+          href: 'https://github.com/lifuyi/deepmateweb',
+          label: '💻 GitHub',
           position: 'right',
         },
       ],
+      hideOnScroll: true,
     },
     footer: {
       style: 'dark',
