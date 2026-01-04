@@ -1,13 +1,13 @@
-import type {ReactNode} from 'react';
+import type { ReactNode } from 'react';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
 import ImageCarousel from '@site/src/components/ImageCarousel';
-import { 
-  FaPassport, FaHome, FaGraduationCap, FaHospital, FaMoneyBill, 
-  FaBus, FaLanguage, FaUtensils, FaUniversity, FaDollarSign, 
-  FaTheaterMasks, FaBriefcase, FaClipboardList, FaMobileAlt, 
+import {
+  FaPassport, FaHome, FaGraduationCap, FaHospital, FaMoneyBill,
+  FaBus, FaLanguage, FaUtensils, FaUniversity, FaDollarSign,
+  FaTheaterMasks, FaBriefcase, FaClipboardList, FaMobileAlt,
   FaComments, FaSuitcaseRolling, FaRocket
 } from 'react-icons/fa';
 
@@ -40,10 +40,10 @@ function HomepageHeader() {
         <div className="container">
           <div className={styles.heroText}>
             <Heading as="h1" className={styles.heroTitle}>
-              Your Journey to Study in China Starts Here
+              Your Study Life Here in China Matters
             </Heading>
             <p className={styles.heroSubtitle}>
-              Everything international students need to know about living, studying, and thriving in China. 
+              Everything international students need to know about living, studying, and thriving in China.
               From visa applications to daily life tips, we've got you covered.
             </p>
             <div className={styles.buttons}>
@@ -116,7 +116,7 @@ function WhyStudyInChina(): ReactNode {
         </p>
         <div className="row">
           {benefits.map((benefit, idx) => (
-            <div key={idx} className="col col--6 margin-bottom--lg">
+            <div key={idx} className="col col--3 margin-bottom--lg">
               <div className={styles.benefitCard}>
                 <div className={styles.benefitIcon}>{benefit.icon}</div>
                 <Heading as="h3">{benefit.title}</Heading>
@@ -204,7 +204,7 @@ function CtaSection(): ReactNode {
           Ready to Start Your Adventure?
         </Heading>
         <p className={styles.ctaSubtitle}>
-          Join thousands of international students who have successfully made China their home. 
+          Join thousands of international students who have successfully made China their home.
           Get personalized guidance and support throughout your journey.
         </p>
         <div className={styles.buttons}>
@@ -220,7 +220,7 @@ function CtaSection(): ReactNode {
 }
 
 export default function Home(): ReactNode {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
       title={`Your Journey to Study in China Starts Here`}

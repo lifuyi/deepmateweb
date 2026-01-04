@@ -1,11 +1,11 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
+import { themes as prismThemes } from 'prism-react-renderer';
+import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'Study in China',
+  title: 'Deepmate',
   tagline: 'Your Gateway to Chinese Universities',
   favicon: 'img/favicon.ico',
 
@@ -76,8 +76,8 @@ const config: Config = {
       disableSwitch: false,
     },
     metadata: [
-      {name: 'keywords', content: 'documentation, AI, development, deepmate'},
-      {name: 'description', content: 'DeepMate - AI-Powered Development Platform Documentation'},
+      { name: 'keywords', content: 'documentation, AI, development, deepmate' },
+      { name: 'description', content: 'DeepMate - AI-Powered Development Platform Documentation' },
     ],
     docs: {
       sidebar: {
@@ -86,9 +86,9 @@ const config: Config = {
       },
     },
     navbar: {
-      title: 'Study in China',
+      title: 'Deepmate',
       logo: {
-        alt: 'Study in China Logo',
+        alt: 'Deepmate',
         src: 'img/logo.svg',
       },
       items: [
@@ -96,9 +96,9 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Guide',
+          label: 'China Study Overall Guide',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
+        { to: '/blog', label: 'New', position: 'left' },
         {
           href: 'https://github.com/lifuyi/deepmateweb',
           label: 'GitHub',
