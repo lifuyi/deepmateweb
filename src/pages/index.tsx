@@ -159,10 +159,10 @@ function StatsSection(): ReactNode {
 
 function QuickStartGuides(): ReactNode {
   const guides = [
-    { icon: <FaClipboardList />, title: 'First Week Checklist', desc: 'Essential tasks to complete when you arrive in China', link: '/docs/first-week' },
-    { icon: <FaMobileAlt />, title: 'Essential Apps', desc: 'Must-have mobile apps for daily life in China', link: '/docs/essential-apps' },
-    { icon: <FaComments />, title: 'Language Basics', desc: 'Key Chinese phrases every student should know', link: '/docs/language-basics' },
-    { icon: <FaSuitcaseRolling />, title: 'Packing Guide', desc: 'What to bring and what to buy in China', link: '/docs/packing-guide' },
+    { icon: <FaClipboardList />, title: 'First Week Checklist', desc: 'Essential tasks to complete when you arrive in China', link: '/docs/intro' },
+    { icon: <FaMobileAlt />, title: 'Essential Apps', desc: 'Must-have mobile apps for daily life in China', link: '/docs/intro' },
+    { icon: <FaComments />, title: 'Language Basics', desc: 'Key Chinese phrases every student should know', link: '/docs/intro' },
+    { icon: <FaSuitcaseRolling />, title: 'Packing Guide', desc: 'What to bring and what to buy in China', link: '/docs/intro' },
   ];
 
   return (

@@ -56,10 +56,10 @@ China has become one of the world's most popular destinations for international 
 
 New to studying in China? Start with these essential guides:
 
-1. **[Application Guide](application-process.md)** - Start your journey
-2. **[Visa Guide](visa-requirements.md)** - Understand visa requirements
-3. **[First Week in China](first-week.md)** - What to do when you arrive
-4. **[Essential Apps](essential-apps.md)** - Must-have apps for daily life
+1. **Getting Started** - Begin your application journey
+2. **Visa Information** - Understand visa requirements
+3. **First Week in China** - What to do when you arrive
+4. **Essential Apps** - Must-have apps for daily life
 
 ## 🤝 Need Help?
 
