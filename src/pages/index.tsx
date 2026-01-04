@@ -4,6 +4,12 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
 import ImageCarousel from '@site/src/components/ImageCarousel';
+import { 
+  FaPassport, FaHome, FaGraduationCap, FaHospital, FaMoneyBill, 
+  FaBus, FaLanguage, FaUtensils, FaUniversity, FaDollarSign, 
+  FaTheaterMasks, FaBriefcase, FaClipboardList, FaMobileAlt, 
+  FaComments, FaSuitcaseRolling, FaRocket
+} from 'react-icons/fa';
 
 import styles from './index.module.css';
 
@@ -44,7 +50,7 @@ function HomepageHeader() {
               <Link
                 className="button button--primary button--lg"
                 to="/docs/intro">
-                Start Your Journey 🎓
+                Start Your Journey <FaGraduationCap />
               </Link>
             </div>
           </div>
@@ -56,14 +62,14 @@ function HomepageHeader() {
 
 function CategoriesSection(): ReactNode {
   const categories = [
-    { icon: '🛂', title: 'Visa & Immigration', desc: 'Complete guide to student visas, residence permits, and legal requirements', link: '/docs/visa' },
-    { icon: '🏠', title: 'Accommodation', desc: 'Find the perfect place to live, from campus dorms to private apartments', link: '/docs/accommodation' },
-    { icon: '🎓', title: 'Campus Life', desc: 'Navigate university life, classes, clubs, and student activities', link: '/docs/campus-life' },
-    { icon: '🏥', title: 'Healthcare', desc: 'Medical insurance, hospitals, and staying healthy in China', link: '/docs/healthcare' },
-    { icon: '💳', title: 'Banking & Money', desc: 'Open bank accounts, use mobile payments, and manage finances', link: '/docs/banking' },
-    { icon: '🚌', title: 'Transportation', desc: 'Metro, buses, bikes, and getting around Chinese cities', link: '/docs/transportation' },
-    { icon: '🗣️', title: 'Language & Culture', desc: 'Learn Chinese, understand customs, and embrace local culture', link: '/docs/language-culture' },
-    { icon: '🥟', title: 'Food & Dining', desc: 'Explore Chinese cuisine, dietary needs, and where to eat', link: '/docs/food' },
+    { icon: <FaPassport />, title: 'Visa & Immigration', desc: 'Complete guide to student visas, residence permits, and legal requirements', link: '/docs/visa' },
+    { icon: <FaHome />, title: 'Accommodation', desc: 'Find the perfect place to live, from campus dorms to private apartments', link: '/docs/accommodation' },
+    { icon: <FaGraduationCap />, title: 'Campus Life', desc: 'Navigate university life, classes, clubs, and student activities', link: '/docs/campus-life' },
+    { icon: <FaHospital />, title: 'Healthcare', desc: 'Medical insurance, hospitals, and staying healthy in China', link: '/docs/healthcare' },
+    { icon: <FaMoneyBill />, title: 'Banking & Money', desc: 'Open bank accounts, use mobile payments, and manage finances', link: '/docs/banking' },
+    { icon: <FaBus />, title: 'Transportation', desc: 'Metro, buses, bikes, and getting around Chinese cities', link: '/docs/transportation' },
+    { icon: <FaLanguage />, title: 'Language & Culture', desc: 'Learn Chinese, understand customs, and embrace local culture', link: '/docs/language-culture' },
+    { icon: <FaUtensils />, title: 'Food & Dining', desc: 'Explore Chinese cuisine, dietary needs, and where to eat', link: '/docs/food' },
   ];
 
   return (
@@ -93,10 +99,10 @@ function CategoriesSection(): ReactNode {
 
 function WhyStudyInChina(): ReactNode {
   const benefits = [
-    { icon: '🏛️', title: 'World-Class Education', desc: 'Study at internationally recognized universities with cutting-edge facilities and renowned professors' },
-    { icon: '💰', title: 'Affordable Living', desc: 'Enjoy a high quality of life with reasonable tuition fees and living costs compared to Western countries' },
-    { icon: '🎭', title: 'Cultural Experience', desc: 'Immerse yourself in one of the world\'s oldest civilizations while experiencing modern innovation' },
-    { icon: '💼', title: 'Career Opportunities', desc: 'Build valuable connections and gain experience in the world\'s second-largest economy' },
+    { icon: <FaUniversity />, title: 'World-Class Education', desc: 'Study at internationally recognized universities with cutting-edge facilities and renowned professors' },
+    { icon: <FaDollarSign />, title: 'Affordable Living', desc: 'Enjoy a high quality of life with reasonable tuition fees and living costs compared to Western countries' },
+    { icon: <FaTheaterMasks />, title: 'Cultural Experience', desc: 'Immerse yourself in one of the world\'s oldest civilizations while experiencing modern innovation' },
+    { icon: <FaBriefcase />, title: 'Career Opportunities', desc: 'Build valuable connections and gain experience in the world\'s second-largest economy' },
   ];
 
   return (
@@ -153,10 +159,10 @@ function StatsSection(): ReactNode {
 
 function QuickStartGuides(): ReactNode {
   const guides = [
-    { icon: '📋', title: 'First Week Checklist', desc: 'Essential tasks to complete when you arrive in China', link: '/docs/first-week' },
-    { icon: '📱', title: 'Essential Apps', desc: 'Must-have mobile apps for daily life in China', link: '/docs/essential-apps' },
-    { icon: '🗣️', title: 'Language Basics', desc: 'Key Chinese phrases every student should know', link: '/docs/language-basics' },
-    { icon: '🎒', title: 'Packing Guide', desc: 'What to bring and what to buy in China', link: '/docs/packing-guide' },
+    { icon: <FaClipboardList />, title: 'First Week Checklist', desc: 'Essential tasks to complete when you arrive in China', link: '/docs/first-week' },
+    { icon: <FaMobileAlt />, title: 'Essential Apps', desc: 'Must-have mobile apps for daily life in China', link: '/docs/essential-apps' },
+    { icon: <FaComments />, title: 'Language Basics', desc: 'Key Chinese phrases every student should know', link: '/docs/language-basics' },
+    { icon: <FaSuitcaseRolling />, title: 'Packing Guide', desc: 'What to bring and what to buy in China', link: '/docs/packing-guide' },
   ];
 
   return (

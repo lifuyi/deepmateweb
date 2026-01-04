@@ -96,12 +96,12 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: '📖 Guide',
+          label: 'Guide',
         },
-        {to: '/blog', label: '📝 Blog', position: 'left'},
+        {to: '/blog', label: 'Blog', position: 'left'},
         {
           type: 'dropdown',
-          label: '🔗 Resources',
+          label: 'Resources',
           position: 'left',
           items: [
             {
@@ -120,7 +120,7 @@ const config: Config = {
         },
         {
           href: 'https://github.com/lifuyi/deepmateweb',
-          label: '💻 GitHub',
+          label: 'GitHub',
           position: 'right',
         },
       ],

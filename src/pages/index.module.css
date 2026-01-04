@@ -120,38 +120,63 @@
 
 .categoryCard {
   display: block;
-  padding: 2rem;
+  padding: 2.5rem 2rem;
   height: 100%;
-  border-radius: 16px;
+  border-radius: 20px;
   background: var(--ifm-card-background-color);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
   text-decoration: none !important;
   color: var(--ifm-font-color-base) !important;
-  border: 1px solid var(--ifm-color-emphasis-200);
+  border: 2px solid transparent;
+  position: relative;
+  overflow: hidden;
 }
 
 [data-theme='dark'] .categoryCard {
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
-  border-color: var(--ifm-color-emphasis-300);
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
 }
 
 .categoryCard:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+  transform: translateY(-8px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  border-color: var(--ifm-color-primary-light);
   text-decoration: none;
 }
 
+.categoryCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--ifm-color-primary) 0%, var(--ifm-color-primary-light) 100%);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.categoryCard:hover::before {
+  transform: scaleX(1);
+}
+
 .categoryIcon {
-  font-size: 3rem;
-  margin-bottom: 1rem;
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
   display: block;
+  transition: transform 0.3s ease;
+  color: var(--ifm-color-primary);
+}
+
+.categoryCard:hover .categoryIcon {
+  transform: scale(1.1);
 }
 
 .categoryCard h3 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
   color: var(--ifm-font-color-base);
+  font-weight: 600;
 }
 
 .categoryCard p {
@@ -171,30 +196,61 @@
 }
 
 .benefitCard {
-  padding: 2rem;
+  padding: 2.5rem 2rem;
   height: 100%;
-  border-radius: 16px;
+  border-radius: 20px;
   background: var(--ifm-card-background-color);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.1);
   text-align: center;
-  border: 1px solid var(--ifm-color-emphasis-200);
+  border: 2px solid transparent;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
 }
 
 [data-theme='dark'] .benefitCard {
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
-  border-color: var(--ifm-color-emphasis-300);
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
+}
+
+.benefitCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  border-color: var(--ifm-color-primary-light);
+}
+
+.benefitCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--ifm-color-primary) 0%, var(--ifm-color-primary-light) 100%);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.benefitCard:hover::before {
+  transform: scaleX(1);
 }
 
 .benefitIcon {
   font-size: 3.5rem;
   margin-bottom: 1.5rem;
   display: block;
+  transition: transform 0.3s ease;
+  color: var(--ifm-color-primary);
+}
+
+.benefitCard:hover .benefitIcon {
+  transform: scale(1.1);
 }
 
 .benefitCard h3 {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   margin-bottom: 1rem;
   color: var(--ifm-font-color-base);
+  font-weight: 600;
 }
 
 .benefitCard p {
@@ -283,6 +339,7 @@
   margin-bottom: 1.5rem;
   display: block;
   transition: transform 0.3s ease;
+  color: var(--ifm-color-primary);
 }
 
 .guideCard:hover .guideIcon {
@@ -315,6 +372,13 @@
 .guideCard:hover .readMore {
   gap: 1rem;
   color: var(--ifm-color-primary-dark);
+}
+
+/* Button icon styles */
+button svg,
+.button svg {
+  margin-left: 0.5rem;
+  vertical-align: middle;
 }
 
 /* CTA Section */
