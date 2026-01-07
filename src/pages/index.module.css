@@ -120,9 +120,9 @@
 
 .categoryCard {
   display: block;
-  padding: 2.5rem 2rem;
+  padding: 1.5rem 1.25rem;
   height: 100%;
-  border-radius: 20px;
+  border-radius: 16px;
   background: var(--ifm-card-background-color);
   box-shadow: 0 10px 35px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
@@ -161,8 +161,8 @@
 }
 
 .categoryIcon {
-  font-size: 3.5rem;
-  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+  margin-bottom: 0.75rem;
   display: block;
   transition: transform 0.3s ease;
   color: var(--ifm-color-primary);
@@ -173,8 +173,8 @@
 }
 
 .categoryCard h3 {
-  font-size: 1.6rem;
-  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
   color: var(--ifm-font-color-base);
   font-weight: 600;
 }
@@ -182,7 +182,8 @@
 .categoryCard p {
   color: var(--ifm-color-emphasis-700);
   margin: 0;
-  line-height: 1.6;
+  line-height: 1.5;
+  font-size: 0.9rem;
 }
 
 /* Why Study in China Section */

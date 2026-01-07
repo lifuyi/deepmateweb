@@ -62,28 +62,26 @@ function HomepageHeader() {
 
 function CategoriesSection(): ReactNode {
   const categories = [
-    { icon: <FaPassport />, title: 'Visa & Immigration', desc: 'Complete guide to student visas, residence permits, and legal requirements', link: '/docs/visa' },
-    { icon: <FaHome />, title: 'Accommodation', desc: 'Find the perfect place to live, from campus dorms to private apartments', link: '/docs/accommodation' },
-    { icon: <FaGraduationCap />, title: 'Campus Life', desc: 'Navigate university life, classes, clubs, and student activities', link: '/docs/campus-life' },
-    { icon: <FaHospital />, title: 'Healthcare', desc: 'Medical insurance, hospitals, and staying healthy in China', link: '/docs/healthcare' },
-    { icon: <FaMoneyBill />, title: 'Banking & Money', desc: 'Open bank accounts, use mobile payments, and manage finances', link: '/docs/banking' },
-    { icon: <FaBus />, title: 'Transportation', desc: 'Metro, buses, bikes, and getting around Chinese cities', link: '/docs/transportation' },
-    { icon: <FaLanguage />, title: 'Language & Culture', desc: 'Learn Chinese, understand customs, and embrace local culture', link: '/docs/language-culture' },
-    { icon: <FaUtensils />, title: 'Food & Dining', desc: 'Explore Chinese cuisine, dietary needs, and where to eat', link: '/docs/food' },
+    { icon: <FaUniversity />, title: 'Contact University in China', desc: 'Get in touch with Chinese universities and manage your enrollment', link: '/docs/universities' },
+    { icon: <FaBus />, title: 'Pick-up and drop-off Service', desc: 'Convenient transportation services for airport and campus transfers', link: '/docs/transportation' },
+    { icon: <FaMobileAlt />, title: 'Chinese App Setup', desc: 'Essential apps guide to get you connected and prepared for life in China', link: '/docs/local-services' },
+    { icon: <FaComments />, title: 'Local Life Guide', desc: 'Navigate daily life with tips on local customs, services, and neighborhoods', link: '/docs/local-services' },
+    { icon: <FaHospital />, title: 'Accompanying to medical appointments', desc: 'Support and guidance for healthcare needs in China', link: '/docs/healthcare' },
+    { icon: <FaBriefcase />, title: 'Career Planning', desc: 'Explore internship and career opportunities during and after your studies', link: '/docs/career' },
   ];
 
   return (
     <section className={styles.categoriesSection}>
       <div className="container">
         <Heading as="h2" className={styles.sectionTitle}>
-          Everything You Need to Know
+          What We Can Offer
         </Heading>
         <p className={styles.sectionSubtitle}>
           Comprehensive guides covering all aspects of student life in China
         </p>
         <div className="row">
           {categories.map((category, idx) => (
-            <div key={idx} className="col col--6 margin-bottom--lg">
+            <div key={idx} className="col col--4 margin-bottom--lg">
               <Link to={category.link} className={styles.categoryCard}>
                 <div className={styles.categoryIcon}>{category.icon}</div>
                 <Heading as="h3">{category.title}</Heading>
