@@ -19,7 +19,7 @@ export default function LocaleDropdownNavbarItem({
   
   const {
     siteConfig: {baseUrl},
-    i18n: {defaultLocale, locales, localeConfigs},
+    i18n: {defaultLocale, locales, localeConfigs, currentLocale},
   } = useDocusaurusContext();
 
   const extractPathWithoutLocale = (path: string): string => {
@@ -41,7 +41,6 @@ export default function LocaleDropdownNavbarItem({
     return cleanPath || '/';
   };
 
-  const currentLocale = pathname.includes('/zh-Hans/') ? 'zh-Hans' : 'en';
   const currentPath = extractPathWithoutLocale(pathname);
   const currentLocaleConfig = localeConfigs[currentLocale];
 

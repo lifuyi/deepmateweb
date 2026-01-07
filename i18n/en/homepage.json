@@ -1,0 +1,222 @@
+{
+  "homepage.hero.title": {
+    "message": "Your Study Life Here in China Matters",
+    "description": "Main hero title on homepage"
+  },
+  "homepage.hero.subtitle": {
+    "message": "Everything international students need to know about living, studying, and thriving in China. From visa applications to daily life tips, we've got you covered.",
+    "description": "Hero subtitle on homepage"
+  },
+  "homepage.hero.button": {
+    "message": "Start Your Journey",
+    "description": "CTA button text in hero section"
+  },
+  "homepage.categories.title": {
+    "message": "What We Can Offer",
+    "description": "Categories section title"
+  },
+  "homepage.categories.subtitle": {
+    "message": "Comprehensive guides covering all aspects of student life in China",
+    "description": "Categories section subtitle"
+  },
+  "homepage.category.university": {
+    "message": "Contact University in China",
+    "description": "University category title"
+  },
+  "homepage.category.university.desc": {
+    "message": "Get in touch with Chinese universities and manage your enrollment",
+    "description": "University category description"
+  },
+  "homepage.category.pickup": {
+    "message": "Pick-up and drop-off Service",
+    "description": "Transportation category title"
+  },
+  "homepage.category.pickup.desc": {
+    "message": "Convenient transportation services for airport and campus transfers",
+    "description": "Transportation category description"
+  },
+  "homepage.category.apps": {
+    "message": "Chinese App Setup",
+    "description": "Apps category title"
+  },
+  "homepage.category.apps.desc": {
+    "message": "Essential apps guide to get you connected and prepared for life in China",
+    "description": "Apps category description"
+  },
+  "homepage.category.locallife": {
+    "message": "Local Life Guide",
+    "description": "Local life category title"
+  },
+  "homepage.category.locallife.desc": {
+    "message": "Navigate daily life with tips on local customs, services, and neighborhoods",
+    "description": "Local life category description"
+  },
+  "homepage.category.healthcare": {
+    "message": "Accompanying to medical appointments",
+    "description": "Healthcare category title"
+  },
+  "homepage.category.healthcare.desc": {
+    "message": "Support and guidance for healthcare needs in China",
+    "description": "Healthcare category description"
+  },
+  "homepage.category.career": {
+    "message": "Career Planning",
+    "description": "Career category title"
+  },
+  "homepage.category.career.desc": {
+    "message": "Explore internship and career opportunities during and after your studies",
+    "description": "Career category description"
+  },
+  "homepage.why.title": {
+    "message": "Why Study in China?",
+    "description": "Why section title"
+  },
+  "homepage.why.subtitle": {
+    "message": "Discover the opportunities and advantages of pursuing your education in China",
+    "description": "Why section subtitle"
+  },
+  "homepage.benefit.education": {
+    "message": "World-Class Education",
+    "description": "Education benefit title"
+  },
+  "homepage.benefit.education.desc": {
+    "message": "Study at internationally recognized universities with cutting-edge facilities and renowned professors",
+    "description": "Education benefit description"
+  },
+  "homepage.benefit.affordable": {
+    "message": "Affordable Living",
+    "description": "Affordable living benefit title"
+  },
+  "homepage.benefit.affordable.desc": {
+    "message": "Enjoy a high quality of life with reasonable tuition fees and living costs compared to Western countries",
+    "description": "Affordable living benefit description"
+  },
+  "homepage.benefit.culture": {
+    "message": "Cultural Experience",
+    "description": "Cultural experience benefit title"
+  },
+  "homepage.benefit.culture.desc": {
+    "message": "Immerse yourself in one of the world's oldest civilizations while experiencing modern innovation",
+    "description": "Cultural experience benefit description"
+  },
+  "homepage.benefit.career": {
+    "message": "Career Opportunities",
+    "description": "Career opportunities benefit title"
+  },
+  "homepage.benefit.career.desc": {
+    "message": "Build valuable connections and gain experience in the world's second-largest economy",
+    "description": "Career opportunities benefit description"
+  },
+  "homepage.stats.students": {
+    "message": "International Students",
+    "description": "International students stat label"
+  },
+  "homepage.stats.students.value": {
+    "message": "500K+",
+    "description": "International students stat value"
+  },
+  "homepage.stats.universities": {
+    "message": "Universities",
+    "description": "Universities stat label"
+  },
+  "homepage.stats.universities.value": {
+    "message": "3000+",
+    "description": "Universities stat value"
+  },
+  "homepage.stats.countries": {
+    "message": "Countries Represented",
+    "description": "Countries stat label"
+  },
+  "homepage.stats.countries.value": {
+    "message": "100+",
+    "description": "Countries stat value"
+  },
+  "homepage.stats.satisfaction": {
+    "message": "Satisfaction Rate",
+    "description": "Satisfaction rate stat label"
+  },
+  "homepage.stats.satisfaction.value": {
+    "message": "95%",
+    "description": "Satisfaction rate stat value"
+  },
+  "homepage.quickstart.title": {
+    "message": "Quick Start Guides",
+    "description": "Quick start section title"
+  },
+  "homepage.quickstart.subtitle": {
+    "message": "Get up to speed quickly with our step-by-step guides",
+    "description": "Quick start section subtitle"
+  },
+  "homepage.quickstart.checklist": {
+    "message": "First Week Checklist",
+    "description": "Quick start checklist title"
+  },
+  "homepage.quickstart.checklist.desc": {
+    "message": "Essential tasks to complete when you arrive in China",
+    "description": "Quick start checklist description"
+  },
+  "homepage.quickstart.apps": {
+    "message": "Essential Apps",
+    "description": "Quick start apps title"
+  },
+  "homepage.quickstart.apps.desc": {
+    "message": "Must-have mobile apps for daily life in China",
+    "description": "Quick start apps description"
+  },
+  "homepage.quickstart.language": {
+    "message": "Language Basics",
+    "description": "Quick start language title"
+  },
+  "homepage.quickstart.language.desc": {
+    "message": "Key Chinese phrases every student should know",
+    "description": "Quick start language description"
+  },
+  "homepage.quickstart.packing": {
+    "message": "Packing Guide",
+    "description": "Quick start packing title"
+  },
+  "homepage.quickstart.packing.desc": {
+    "message": "What to bring and what to buy in China",
+    "description": "Quick start packing description"
+  },
+  "homepage.quickstart.viewall": {
+    "message": "View All Guides",
+    "description": "View all guides button text"
+  },
+  "homepage.cta.title": {
+    "message": "Ready to Start Your Adventure?",
+    "description": "CTA section title"
+  },
+  "homepage.cta.subtitle": {
+    "message": "Join thousands of international students who have successfully made China their home. Get personalized guidance and support throughout your journey.",
+    "description": "CTA section subtitle"
+  },
+  "homepage.cta.button": {
+    "message": "Get Started Now",
+    "description": "CTA button text"
+  },
+  "homepage.features.guide.title": {
+    "message": "📚 Comprehensive Guide",
+    "description": "Feature guide title"
+  },
+  "homepage.features.guide.desc": {
+    "message": "Complete step-by-step guidance for studying in China - from application to graduation. Everything you need in one place.",
+    "description": "Feature guide description"
+  },
+  "homepage.features.database.title": {
+    "message": "🏫 University Database",
+    "description": "Feature database title"
+  },
+  "homepage.features.database.desc": {
+    "message": "Explore detailed information about China's top universities, programs, and campuses. Find the perfect fit for your academic goals.",
+    "description": "Feature database description"
+  },
+  "homepage.features.community.title": {
+    "message": "🤝 Community Support",
+    "description": "Feature community title"
+  },
+  "homepage.features.community.desc": {
+    "message": "Connect with fellow international students, get peer support, and share experiences. You're not alone in this journey!",
+    "description": "Feature community description"
+  }
+}
