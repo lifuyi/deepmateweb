@@ -11,7 +11,7 @@ const config: Config = {
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
-    v4: true, // Improve compatibility with the upcoming Docusaurus v4
+    v4: false, // Disable to fix language switcher URL accumulation
   },
 
   // Set the production url of your site here
@@ -32,7 +32,17 @@ const config: Config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en', 'zh-Hans'],
+    localeConfigs: {
+      en: {
+        label: 'English',
+        htmlLang: 'en',
+      },
+      'zh-Hans': {
+        label: '中文',
+        htmlLang: 'zh-Hans',
+      },
+    },
   },
 
   presets: [
@@ -118,8 +128,8 @@ const config: Config = {
         },
         { to: '/blog', label: 'New', position: 'left' },
         {
-          href: 'https://github.com/lifuyi/deepmateweb',
-          label: 'GitHub',
+          type: 'localeDropdown',
+          component: 'LocaleDropdownNavbarItem',
           position: 'right',
         },
       ],

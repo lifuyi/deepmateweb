@@ -1,0 +1,30 @@
+{
+  "title": {
+    "message": "Deepmate",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "Deepmate",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.China Study Overall Guide": {
+    "message": "China Study Overall Guide",
+    "description": "Navbar item with label China Study Overall Guide"
+  },
+  "item.label.Cities": {
+    "message": "Cities",
+    "description": "Navbar item with label Cities"
+  },
+  "item.label.Universities": {
+    "message": "Universities",
+    "description": "Navbar item with label Universities"
+  },
+  "item.label.Local Services": {
+    "message": "Local Services",
+    "description": "Navbar item with label Local Services"
+  },
+  "item.label.New": {
+    "message": "New",
+    "description": "Navbar item with label New"
+  }
+}
