@@ -98,6 +98,24 @@ const config: Config = {
           position: 'left',
           label: 'China Study Overall Guide',
         },
+        {
+          type: 'docSidebar',
+          sidebarId: 'citiesSidebar',
+          position: 'left',
+          label: 'Cities',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'universitiesSidebar',
+          position: 'left',
+          label: 'Universities',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'localServicesSidebar',
+          position: 'left',
+          label: 'Local Services',
+        },
         { to: '/blog', label: 'New', position: 'left' },
         {
           href: 'https://github.com/lifuyi/deepmateweb',
