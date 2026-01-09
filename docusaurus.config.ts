@@ -129,7 +129,6 @@ const config: Config = {
         { to: '/blog', label: 'New', position: 'left' },
         {
           type: 'localeDropdown',
-          component: 'LocaleDropdownNavbarItem',
           position: 'right',
         },
       ],
