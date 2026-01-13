@@ -15,19 +15,19 @@ import styles from './index.module.css';
 
 const carouselSlides = [
   {
-    image: 'https://images.unsplash.com/photo-1562774053-701939374585?w=1200&h=600&fit=crop',
+    image: '/img/09426451feb1414d99ae71e87f66daf8.webp',
     alt: 'Chinese university campus'
   },
   {
-    image: 'https://images.unsplash.com/photo-1546410531-bb4caa6b424d?w=1200&h=600&fit=crop',
+    image: '/img/46ed867159e749c1b9ca10bdc6331594.webp',
     alt: 'University library'
   },
   {
-    image: 'https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=1200&h=600&fit=crop',
+    image: '/img/6cf96ccebaed4c8cab1d20f2a8834158.webp',
     alt: 'University students'
   },
   {
-    image: 'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=1200&h=600&fit=crop',
+    image: '/img/b72afc8b3ee72d96914735cb83429ce6.jpeg',
     alt: 'International students'
   }
 ];
@@ -35,7 +35,7 @@ const carouselSlides = [
 function HomepageHeader() {
   return (
     <header className={styles.heroSection}>
-      <ImageCarousel slides={carouselSlides} autoPlay={true} interval={6000} />
+      <ImageCarousel slides={carouselSlides} autoPlay={true} interval={8000} />
       <div className={styles.heroContent}>
         <div className="container">
           <div className={styles.heroText}>

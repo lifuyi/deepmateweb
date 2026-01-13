@@ -1,107 +1,278 @@
 /**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
+ * Clean Modern Styles - Inspired by Reference Design
+ * Minimalist, clean aesthetic with subtle accents
  */
 
-/* You can override the default Infima variables here. */
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Clean Color System */
 :root {
-  --ifm-color-primary: #ff6b6b;
-  --ifm-color-primary-dark: #ff5252;
-  --ifm-color-primary-darker: #ff4040;
-  --ifm-color-primary-darkest: #ff1e1e;
-  --ifm-color-primary-light: #ff8484;
-  --ifm-color-primary-lighter: #ff9696;
-  --ifm-color-primary-lightest: #ffb8b8;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  /* Primary Colors - Clean Red Accent */
+  --ifm-color-primary: #dc2626;
+  --ifm-color-primary-dark: #b91c1c;
+  --ifm-color-primary-darker: #991b1b;
+  --ifm-color-primary-darkest: #7f1d1d;
+  --ifm-color-primary-light: #ef4444;
+  --ifm-color-primary-lighter: #f87171;
+  --ifm-color-primary-lightest: #fca5a5;
+
+  /* Neutral Colors - Clean and Minimal */
+  --neutral-50: #f9fafb;
+  --neutral-100: #f3f4f6;
+  --neutral-200: #e5e7eb;
+  --neutral-300: #d1d5db;
+  --neutral-700: #374151;
+  --neutral-800: #1f2937;
+  --neutral-900: #111827;
+
+  /* Background Colors */
+  --ifm-background-color: #ffffff;
+  --ifm-card-background-color: #ffffff;
+
+  /* Typography */
   --ifm-font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
-  --ifm-font-size-base: 17px;
-  --ifm-line-height-base: 1.7;
-  --ifm-spacing-vertical: 1.6rem;
-  --ifm-navbar-background-color: #ffffff;
-  --ifm-navbar-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+  --ifm-font-size-base: 16px;
+  --ifm-line-height-base: 1.6;
+  --ifm-heading-font-weight: 700;
+
+  /* Spacing & Layout */
+  --ifm-spacing-vertical: 1.5rem;
   --ifm-global-radius: 12px;
   --ifm-card-border-radius: 16px;
+
+  /* Shadows - Subtle and Clean */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+  /* Navbar */
+  --ifm-navbar-background-color: #ffffff;
+  --ifm-navbar-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+
+  /* Code */
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.05);
+
+  /* Animations */
+  --transition-smooth: all 0.2s ease-in-out;
+  --transition-medium: all 0.3s ease-in-out;
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+/* Dark Mode - Clean Dark Theme */
 [data-theme='dark'] {
-  --ifm-color-primary: #4ecdc4;
-  --ifm-color-primary-dark: #3abdb4;
-  --ifm-color-primary-darker: #2eb3aa;
-  --ifm-color-primary-darkest: #259389;
-  --ifm-color-primary-light: #62d3cc;
-  --ifm-color-primary-lighter: #6ed7d0;
-  --ifm-color-primary-lightest: #8adfd9;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
-  --ifm-navbar-background-color: #1a1a1a;
+  /* Primary Colors - Slightly Brighter Red for Dark Mode */
+  --ifm-color-primary: #ef4444;
+  --ifm-color-primary-dark: #dc2626;
+  --ifm-color-primary-darker: #b91c1c;
+  --ifm-color-primary-darkest: #991b1b;
+  --ifm-color-primary-light: #f87171;
+  --ifm-color-primary-lighter: #fca5a5;
+  --ifm-color-primary-lightest: #fecaca;
+
+  /* Dark Neutrals */
+  --neutral-50: #1f2937;
+  --neutral-100: #374151;
+  --neutral-200: #4b5563;
+  --neutral-300: #6b7280;
+  --neutral-700: #d1d5db;
+  --neutral-800: #e5e7eb;
+  --neutral-900: #f3f4f6;
+
+  --ifm-background-color: #111827;
+  --ifm-card-background-color: #1f2937;
+  --ifm-navbar-background-color: #1f2937;
+  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.05);
+
+  /* Subtle shadows for dark mode */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5), 0 4px 6px -2px rgba(0, 0, 0, 0.4);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.6), 0 10px 10px -5px rgba(0, 0, 0, 0.5);
 }
 
-/* Custom styles for international student theme */
+/* Global Enhancements */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-feature-settings: 'kern' 1, 'liga' 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Clean Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--ifm-font-family-base);
+  font-weight: var(--ifm-heading-font-weight);
+  letter-spacing: -0.01em;
+  color: var(--neutral-900);
+}
+
+[data-theme='dark'] h1,
+[data-theme='dark'] h2,
+[data-theme='dark'] h3,
+[data-theme='dark'] h4,
+[data-theme='dark'] h5,
+[data-theme='dark'] h6 {
+  color: var(--neutral-900);
+}
+
+/* Clean Navbar */
+.navbar {
+  background-color: var(--ifm-navbar-background-color) !important;
+  border-bottom: 1px solid var(--neutral-200);
+  transition: var(--transition-smooth);
+  box-shadow: var(--shadow-sm);
+}
+
+[data-theme='dark'] .navbar {
+  border-bottom: 1px solid var(--neutral-100);
+}
+
+.navbar__brand:hover {
+  opacity: 0.8;
+  transition: var(--transition-smooth);
+}
+
+/* Clean Button Styles */
+.button--primary {
+  border-radius: 50px;
+  padding: 12px 28px;
+  font-weight: 600;
+  font-size: 15px;
+  background-color: var(--ifm-color-primary);
+  border: none;
+  box-shadow: none;
+  transition: var(--transition-smooth);
+  color: white;
+}
+
+.button--primary:hover {
+  background-color: var(--ifm-color-primary-dark);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+  color: white;
+}
+
+.button--primary:active {
+  transform: translateY(0);
+}
+
+.button--secondary {
+  border-radius: 50px;
+  padding: 12px 28px;
+  font-weight: 600;
+  font-size: 15px;
+  background-color: white;
+  border: 2px solid var(--neutral-300);
+  transition: var(--transition-smooth);
+  color: var(--neutral-900);
+}
+
+.button--secondary:hover {
+  background-color: var(--neutral-50);
+  border-color: var(--neutral-400);
+  transform: translateY(-1px);
+}
+
+[data-theme='dark'] .button--secondary {
+  background-color: var(--neutral-100);
+  border-color: var(--neutral-200);
+  color: var(--neutral-900);
+}
+
+[data-theme='dark'] .button--secondary:hover {
+  background-color: var(--neutral-200);
+}
+
+/* Clean Card Styles */
+.card {
+  border: 1px solid var(--neutral-200);
+  border-radius: var(--ifm-card-border-radius);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-medium);
+  background: var(--ifm-card-background-color);
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--neutral-300);
+}
+
+[data-theme='dark'] .card {
+  border-color: var(--neutral-100);
+}
+
+[data-theme='dark'] .card:hover {
+  border-color: var(--neutral-200);
+}
+
+/* Hero Section - Clean with Image Background */
 .hero {
-  background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #fecfef 100%);
+  background: linear-gradient(to bottom, var(--neutral-50) 0%, white 100%);
   position: relative;
   overflow: hidden;
 }
 
-.hero::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="white" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="white" opacity="0.1"/><circle cx="50" cy="10" r="0.5" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
-  pointer-events: none;
-}
-
 [data-theme='dark'] .hero {
-  background: linear-gradient(135deg, #1a2980 0%, #26d0ce 100%);
+  background: linear-gradient(to bottom, var(--neutral-50) 0%, var(--ifm-background-color) 100%);
 }
 
-.navbar {
-  backdrop-filter: blur(10px);
-  background-color: rgba(255, 255, 255, 0.9) !important;
-}
-
-[data-theme='dark'] .navbar {
-  background-color: rgba(26, 26, 26, 0.9) !important;
-}
-
-.button--primary {
-  border-radius: 50px;
-  padding: 12px 30px;
-  font-weight: 600;
-  box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
-  transition: all 0.3s ease;
-}
-
-.button--primary:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4);
-}
-
-.card {
-  border: none;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
-  transition: all 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
-}
-
-[data-theme='dark'] .card {
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
-}
-
-.markdown h1, .markdown h2, .markdown h3 {
+/* Markdown Content */
+.markdown h1,
+.markdown h2,
+.markdown h3 {
   font-weight: 700;
+  letter-spacing: -0.01em;
 }
 
-/* Add smooth scrolling */
-html {
-  scroll-behavior: smooth;
+/* Smooth Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Utility Classes */
+.text-gradient {
+  background: linear-gradient(135deg, var(--ifm-color-primary) 0%, #f97316 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Link Styles */
+a {
+  text-decoration: none;
+  transition: var(--transition-smooth);
+}
+
+a:hover {
+  text-decoration: none;
 }
