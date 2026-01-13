@@ -1,8 +1,8 @@
 {
-  "label": "Universities",
+  "label": "大学",
   "position": 11,
   "link": {
     "type": "generated-index",
-    "description": "Explore top universities in China for international students."
+    "description": "探索中国顶尖大学，为国际学生提供全面指南。"
   }
 }
