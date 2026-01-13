@@ -1,8 +1,8 @@
 ---
-title: 22. 华东师范大学
+title: 华东师范大学
 ---
 
-## 22. 华东师范大学 (East China Normal University, ECNU) - 师范名校，教育摇篮
+## 华东师范大学 (East China Normal University, ECNU) - 师范名校，教育摇篮
 
 ### 学校简介
 华东师范大学成立于1951年，位于上海，是中华人民共和国教育部直属的全国重点大学，在教育学、心理学、中国语言文学等领域具有较强实力。

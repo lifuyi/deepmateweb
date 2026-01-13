@@ -1,8 +1,8 @@
 ---
-title: 21. 西北工业大学
+title: 西北工业大学
 ---
 
-## 21. 西北工业大学 (Northwestern Polytechnical University, NPU) - 航空航天，国之重器
+## 西北工业大学 (Northwestern Polytechnical University, NPU) - 航空航天，国之重器
 
 ### 学校简介
 西北工业大学成立于1938年，位于西安，是中华人民共和国工业和信息化部直属的全国重点大学，在航空航天、材料、工程等领域具有较强实力。

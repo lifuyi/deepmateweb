@@ -1,8 +1,8 @@
 ---
-title: 9. 国防科技大学
+title: 国防科技大学
 ---
 
-## 9. 国防科技大学 (National University of Defense Technology) - 军事科技，国之重器
+## 国防科技大学 (National University of Defense Technology) - 军事科技，国之重器
 
 ### 学校简介
 国防科技大学成立于1953年，位于长沙，是中国军队直属的最高学府，在计算机科学、航空航天、军事技术等领域具有独特优势。

@@ -1,8 +1,8 @@
 ---
-title: 12. 北京理工大学
+title: 北京理工大学
 ---
 
-## 12. 北京理工大学 (Beijing Institute of Technology, BIT) - 工科摇篮，创新高地
+## 北京理工大学 (Beijing Institute of Technology, BIT) - 工科摇篮，创新高地
 
 ### 学校简介
 北京理工大学成立于1940年，位于北京，是中华人民共和国工业和信息化部直属的全国重点大学，在工程、技术、军事等领域具有较强实力。

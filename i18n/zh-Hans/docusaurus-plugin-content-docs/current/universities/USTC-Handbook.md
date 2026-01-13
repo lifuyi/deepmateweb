@@ -1,8 +1,8 @@
 ---
-title: 6. 中国科学技术大学
+title: 中国科学技术大学
 ---
 
-## 6. 中国科学技术大学 (University of Science and Technology of China, USTC) - 科技英才，创新摇篮
+## 中国科学技术大学 (University of Science and Technology of China, USTC) - 科技英才，创新摇篮
 
 ### 学校简介
 中国科学技术大学成立于1958年，位于合肥，是中国科学院直属的全国重点大学，在理学、信息技术、生命科学等领域具有较强实力。

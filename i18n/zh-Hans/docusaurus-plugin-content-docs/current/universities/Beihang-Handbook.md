@@ -1,8 +1,8 @@
 ---
-title: 10. 北京航空航天大学
+title: 北京航空航天大学
 ---
 
-## 10. 北京航空航天大学 (Beijing University of Aeronautics and Astronautics, BUAA) - 航空航天，强国之基
+## 北京航空航天大学 (Beijing University of Aeronautics and Astronautics, BUAA) - 航空航天，强国之基
 
 ### 学校简介
 北京航空航天大学成立于1952年，位于北京，是中华人民共和国工业和信息化部直属的全国重点大学，在航空航天、工程、技术等领域具有较强实力。

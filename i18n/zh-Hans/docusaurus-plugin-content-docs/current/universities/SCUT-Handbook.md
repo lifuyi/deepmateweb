@@ -1,8 +1,8 @@
 ---
-title: 27. 华南理工大学
+title: 华南理工大学
 ---
 
-## 27. 华南理工大学 (South China University of Technology, SCUT) - 华南重镇，工科强校
+## 华南理工大学 (South China University of Technology, SCUT) - 华南重镇，工科强校
 
 ### 学校简介
 华南理工大学成立于1952年，位于广州，是中华人民共和国教育部直属的全国重点大学，在材料、化工、轻工等领域具有较强实力。

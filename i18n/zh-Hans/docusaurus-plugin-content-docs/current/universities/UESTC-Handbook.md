@@ -1,8 +1,8 @@
 ---
-title: 24. 电子科技大学
+title: 电子科技大学
 ---
 
-## 24. 电子科技大学 (University of Electronic Science and Technology of China, UESTC) - 电子信息，国之重器
+## 电子科技大学 (University of Electronic Science and Technology of China, UESTC) - 电子信息，国之重器
 
 ### 学校简介
 电子科技大学成立于1956年，位于成都，是中华人民共和国教育部直属的全国重点大学，在电子、信息、通信等领域具有较强实力。

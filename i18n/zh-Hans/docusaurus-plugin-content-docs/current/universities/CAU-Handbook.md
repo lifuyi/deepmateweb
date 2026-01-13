@@ -1,8 +1,8 @@
 ---
-title: 36. 中国农业大学
+title: 中国农业大学
 ---
 
-## 36. 中国农业大学 (China Agricultural University, CAU) - 农业科学，国之根本
+## 中国农业大学 (China Agricultural University, CAU) - 农业科学，国之根本
 
 ### 学校简介
 中国农业大学成立于1905年，位于北京，是以农业科学为优势和特色的综合性研究型大学，在农业、生命科学、食品等领域具有较强实力。

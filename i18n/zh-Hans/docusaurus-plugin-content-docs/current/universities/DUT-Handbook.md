@@ -1,8 +1,8 @@
 ---
-title: 28. 大连理工大学
+title: 大连理工大学
 ---
 
-## 28. 大连理工大学 (Dalian University of Technology, DUT) - 北方明珠，工科重镇
+## 大连理工大学 (Dalian University of Technology, DUT) - 北方明珠，工科重镇
 
 ### 学校简介
 大连理工大学成立于1949年，位于大连，是中华人民共和国教育部直属的全国重点大学，在力学、化工、机械等领域具有较强实力。

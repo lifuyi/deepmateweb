@@ -1,8 +1,8 @@
 ---
-title: 18. 华中科技大学
+title: 华中科技大学
 ---
 
-## 18. 华中科技大学 (Huazhong University of Science and Technology, HUST) - 中南重镇，工科强校
+## 华中科技大学 (Huazhong University of Science and Technology, HUST) - 中南重镇，工科强校
 
 ### 学校简介
 华中科技大学成立于1952年，位于武汉，是中华人民共和国教育部直属的全国重点大学，在机械、电气、材料等领域具有较强实力。
