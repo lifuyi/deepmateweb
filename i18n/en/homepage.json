@@ -140,11 +140,11 @@
     "description": "Satisfaction rate stat value"
   },
   "homepage.quickstart.title": {
-    "message": "Quick Start Guides",
+    "message": "Essential Guides for New Students",
     "description": "Quick start section title"
   },
   "homepage.quickstart.subtitle": {
-    "message": "Get up to speed quickly with our step-by-step guides",
+    "message": "Everything you need to know before and after arriving in China",
     "description": "Quick start section subtitle"
   },
   "homepage.quickstart.checklist": {
@@ -183,6 +183,62 @@
     "message": "View All Guides",
     "description": "View all guides button text"
   },
+  "homepage.quickstart.university": {
+    "message": "Contact University",
+    "description": "Quick start university title"
+  },
+  "homepage.quickstart.university.desc": {
+    "message": "Get in touch with Chinese universities and manage your enrollment",
+    "description": "Quick start university description"
+  },
+  "homepage.quickstart.transportation": {
+    "message": "Transportation",
+    "description": "Quick start transportation title"
+  },
+  "homepage.quickstart.transportation.desc": {
+    "message": "Navigate public transport and get around cities efficiently",
+    "description": "Quick start transportation description"
+  },
+  "homepage.quickstart.apps": {
+    "message": "Essential Apps",
+    "description": "Quick start apps title"
+  },
+  "homepage.quickstart.apps.desc": {
+    "message": "Must-have mobile apps for daily life in China",
+    "description": "Quick start apps description"
+  },
+  "homepage.quickstart.healthcare": {
+    "message": "Healthcare",
+    "description": "Quick start healthcare title"
+  },
+  "homepage.quickstart.healthcare.desc": {
+    "message": "Access medical services and understand health insurance",
+    "description": "Quick start healthcare description"
+  },
+  "homepage.testimonials.title": {
+    "message": "What Our Students Say",
+    "description": "Testimonials section title"
+  },
+  "homepage.testimonials.subtitle": {
+    "message": "Hear from international students who have made China their home",
+    "description": "Testimonials section subtitle"
+  },
+  "homepage.testimonials.quote1": {
+    "message": "Deepmate helped me navigate my first semester at Tsinghua. The transportation guide was invaluable for getting around Beijing!",
+    "description": "Testimonial 1 quote"
+  },
+  "homepage.testimonials.quote2": {
+    "message": "From setting up my bank account to finding the best local food spots, this platform made my transition to China seamless.",
+    "description": "Testimonial 2 quote"
+  },
+  "homepage.testimonials.quote3": {
+    "message": "The healthcare section helped me understand how to use Chinese hospitals. I felt confident and prepared when I needed medical attention.",
+    "description": "Testimonial 3 quote"
+  },
+  "homepage.testimonials.quote4": {
+    "message": "As an international student, I was nervous about moving to Shanghai. Deepmate's guides on apps and daily life made everything easier.",
+    "description": "Testimonial 4 quote"
+  },
   "homepage.cta.title": {
     "message": "Ready to Start Your Adventure?",
     "description": "CTA section title"
@@ -195,28 +251,4 @@
     "message": "Get Started Now",
     "description": "CTA button text"
   },
-  "homepage.features.guide.title": {
-    "message": "📚 Comprehensive Guide",
-    "description": "Feature guide title"
-  },
-  "homepage.features.guide.desc": {
-    "message": "Complete step-by-step guidance for studying in China - from application to graduation. Everything you need in one place.",
-    "description": "Feature guide description"
-  },
-  "homepage.features.database.title": {
-    "message": "🏫 University Database",
-    "description": "Feature database title"
-  },
-  "homepage.features.database.desc": {
-    "message": "Explore detailed information about China's top universities, programs, and campuses. Find the perfect fit for your academic goals.",
-    "description": "Feature database description"
-  },
-  "homepage.features.community.title": {
-    "message": "🤝 Community Support",
-    "description": "Feature community title"
-  },
-  "homepage.features.community.desc": {
-    "message": "Connect with fellow international students, get peer support, and share experiences. You're not alone in this journey!",
-    "description": "Feature community description"
-  }
 }

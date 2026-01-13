@@ -8,7 +8,7 @@ import { useHomepageTranslations } from '@site/src/hooks/useHomepageTranslations
 import {
   FaGraduationCap, FaHospital, FaBus, FaUniversity, FaDollarSign,
   FaTheaterMasks, FaBriefcase, FaClipboardList, FaMobileAlt,
-  FaComments, FaSuitcaseRolling
+  FaComments, FaSuitcaseRolling, FaBuilding, FaIdCard
 } from 'react-icons/fa';
 
 import styles from './index.module.css';
@@ -65,11 +65,11 @@ function HomepageHeader() {
 function CategoriesSection(): ReactNode {
   const categories = [
     { icon: <FaUniversity />, titleId: 'homepage.category.university', descId: 'homepage.category.university.desc', titleDefault: 'Contact University in China', descDefault: 'Get in touch with Chinese universities and manage your enrollment', link: '/docs/universities' },
-    { icon: <FaBus />, titleId: 'homepage.category.pickup', descId: 'homepage.category.pickup.desc', titleDefault: 'Pick-up and drop-off Service', descDefault: 'Convenient transportation services for airport and campus transfers', link: '/docs/transportation' },
+    { icon: <FaBus />, titleId: 'homepage.category.pickup', descId: 'homepage.category.pickup.desc', titleDefault: 'Pick-up and drop-off Service', descDefault: 'Convenient transportation services for airport and campus transfers', link: '/docs/local-services' },
     { icon: <FaMobileAlt />, titleId: 'homepage.category.apps', descId: 'homepage.category.apps.desc', titleDefault: 'Chinese App Setup', descDefault: 'Essential apps guide to get you connected and prepared for life in China', link: '/docs/local-services' },
     { icon: <FaComments />, titleId: 'homepage.category.locallife', descId: 'homepage.category.locallife.desc', titleDefault: 'Local Life Guide', descDefault: 'Navigate daily life with tips on local customs, services, and neighborhoods', link: '/docs/local-services' },
-    { icon: <FaHospital />, titleId: 'homepage.category.healthcare', descId: 'homepage.category.healthcare.desc', titleDefault: 'Accompanying to medical appointments', descDefault: 'Support and guidance for healthcare needs in China', link: '/docs/healthcare' },
-    { icon: <FaBriefcase />, titleId: 'homepage.category.career', descId: 'homepage.category.career.desc', titleDefault: 'Career Planning', descDefault: 'Explore internship and career opportunities during and after your studies', link: '/docs/career' },
+    { icon: <FaHospital />, titleId: 'homepage.category.healthcare', descId: 'homepage.category.healthcare.desc', titleDefault: 'Accompanying to medical appointments', descDefault: 'Support and guidance for healthcare needs in China', link: '/docs/local-services' },
+    { icon: <FaBriefcase />, titleId: 'homepage.category.career', descId: 'homepage.category.career.desc', titleDefault: 'Career Planning', descDefault: 'Explore internship and career opportunities during and after your studies', link: '/docs/universities' },
   ];
 
   return (
@@ -158,28 +158,28 @@ function QuickStartGuides(): ReactNode {
   const t = useHomepageTranslations();
   
   const guides = [
-    { icon: <FaClipboardList />, titleKey: 'homepage.quickstart.checklist', descKey: 'homepage.quickstart.checklist.desc', link: '/docs/intro' },
-    { icon: <FaMobileAlt />, titleKey: 'homepage.quickstart.apps', descKey: 'homepage.quickstart.apps.desc', link: '/docs/intro' },
-    { icon: <FaComments />, titleKey: 'homepage.quickstart.language', descKey: 'homepage.quickstart.language.desc', link: '/docs/intro' },
-    { icon: <FaSuitcaseRolling />, titleKey: 'homepage.quickstart.packing', descKey: 'homepage.quickstart.packing.desc', link: '/docs/intro' },
+    { icon: <FaUniversity />, titleKey: 'homepage.quickstart.university', titleDefault: 'Contact University', descKey: 'homepage.quickstart.university.desc', descDefault: 'Get in touch with Chinese universities', link: '/docs/universities' },
+    { icon: <FaBus />, titleKey: 'homepage.quickstart.transportation', titleDefault: 'Transportation', descKey: 'homepage.quickstart.transportation.desc', descDefault: 'Navigate public transport in China', link: '/docs/local-services' },
+    { icon: <FaMobileAlt />, titleKey: 'homepage.quickstart.apps', titleDefault: 'Essential Apps', descKey: 'homepage.quickstart.apps.desc', descDefault: 'Must-have apps for daily life', link: '/docs/local-services' },
+    { icon: <FaHospital />, titleKey: 'homepage.quickstart.healthcare', titleDefault: 'Healthcare', descKey: 'homepage.quickstart.healthcare.desc', descDefault: 'Access medical services in China', link: '/docs/local-services' },
   ];
 
   return (
     <section className={styles.quickStartSection}>
       <div className="container">
         <Heading as="h2" className={styles.sectionTitle}>
-          {t('homepage.quickstart.title')}
+          <Translate id="homepage.quickstart.title">Essential Guides for New Students</Translate>
         </Heading>
         <p className={styles.sectionSubtitle}>
-          {t('homepage.quickstart.subtitle')}
+          <Translate id="homepage.quickstart.subtitle">Everything you need to know before and after arriving in China</Translate>
         </p>
         <div className="row">
           {guides.map((guide, idx) => (
             <div key={idx} className="col col--6 margin-bottom--lg">
               <Link to={guide.link} className={styles.guideCard}>
                 <div className={styles.guideIcon}>{guide.icon}</div>
-                <Heading as="h3">{t(guide.titleKey)}</Heading>
-                <p>{t(guide.descKey)}</p>
+                <Heading as="h3"><Translate id={guide.titleKey}>{guide.titleDefault}</Translate></Heading>
+                <p><Translate id={guide.descKey}>{guide.descDefault}</Translate></p>
                 <span className={styles.readMore}>Read More →</span>
               </Link>
             </div>
@@ -187,7 +187,7 @@ function QuickStartGuides(): ReactNode {
         </div>
         <div className="text--center margin-top--lg">
           <Link to="/docs/intro" className="button button--primary button--lg">
-            {t('homepage.quickstart.viewall')} 📚
+            <Translate id="homepage.quickstart.viewall">View All Guides</Translate> 📚
           </Link>
         </div>
       </div>
@@ -196,23 +196,69 @@ function QuickStartGuides(): ReactNode {
 }
 
 function CtaSection(): ReactNode {
-  const t = useHomepageTranslations();
-  
   return (
     <section className={styles.ctaSection}>
       <div className="container">
         <Heading as="h2" className={styles.ctaTitle}>
-          {t('homepage.cta.title')}
+          <Translate id="homepage.cta.title">Ready to Start Your Adventure?</Translate>
         </Heading>
         <p className={styles.ctaSubtitle}>
-          {t('homepage.cta.subtitle')}
+          <Translate id="homepage.cta.subtitle">Join thousands of international students who have successfully made China their home.</Translate>
         </p>
         <div className={styles.buttons}>
           <Link
             className="button button--primary button--lg"
             to="/docs/intro">
-            {t('homepage.cta.button')} 🚀
+            <Translate id="homepage.cta.button">Get Started Now</Translate> 🚀
           </Link>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+interface Testimonial {
+  name: string;
+  university: string;
+  country: string;
+  quoteKey: string;
+  quoteDefault: string;
+}
+
+function TestimonialsSection(): ReactNode {
+  const testimonials: Testimonial[] = [
+    { name: 'Maria Santos', university: 'Tsinghua University', country: 'Brazil', quoteKey: 'homepage.testimonials.quote1', quoteDefault: 'Deepmate helped me navigate my first semester at Tsinghua. The transportation guide was invaluable!' },
+    { name: 'James Wilson', university: 'Peking University', country: 'UK', quoteKey: 'homepage.testimonials.quote2', quoteDefault: 'From bank accounts to finding the best local food, this platform made my transition seamless.' },
+    { name: 'Yuki Tanaka', university: 'Fudan University', country: 'Japan', quoteKey: 'homepage.testimonials.quote3', quoteDefault: 'The healthcare section helped me understand how to use Chinese hospitals confidently.' },
+    { name: 'Ahmed Hassan', university: 'Shanghai Jiao Tong University', country: 'Egypt', quoteKey: 'homepage.testimonials.quote4', quoteDefault: 'Nervous about moving to Shanghai, but Deepmate guides on apps and daily life made everything easier.' },
+  ];
+
+  return (
+    <section className={styles.testimonialsSection}>
+      <div className="container">
+        <Heading as="h2" className={styles.sectionTitle}>
+          <Translate id="homepage.testimonials.title">What Our Students Say</Translate>
+        </Heading>
+        <p className={styles.sectionSubtitle}>
+          <Translate id="homepage.testimonials.subtitle">Hear from international students who have made China their home</Translate>
+        </p>
+        <div className="row">
+          {testimonials.map((testimonial, idx) => (
+            <div key={idx} className="col col--6 margin-bottom--lg">
+              <div className={styles.testimonialCard}>
+                <p className={styles.testimonialQuote}><Translate id={testimonial.quoteKey}>{testimonial.quoteDefault}</Translate></p>
+                <div className={styles.testimonialAuthor}>
+                  <div className={styles.testimonialAvatar}>
+                    {testimonial.name.charAt(0)}
+                  </div>
+                  <div className={styles.testimonialInfo}>
+                    <div className={styles.testimonialName}>{testimonial.name}</div>
+                    <div className={styles.testimonialMeta}>{testimonial.university}, {testimonial.country}</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>
@@ -230,6 +276,7 @@ export default function Home(): ReactNode {
         <WhyStudyInChina />
         <StatsSection />
         <QuickStartGuides />
+        <TestimonialsSection />
         <CtaSection />
       </main>
     </Layout>

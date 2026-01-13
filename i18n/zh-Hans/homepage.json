@@ -140,11 +140,11 @@
     "description": "Satisfaction rate stat value"
   },
   "homepage.quickstart.title": {
-    "message": "快速入门指南",
+    "message": "新生必备指南",
     "description": "Quick start section title"
   },
   "homepage.quickstart.subtitle": {
-    "message": "通过我们的分步指南快速上手",
+    "message": "关于来华前后的所有须知",
     "description": "Quick start section subtitle"
   },
   "homepage.quickstart.checklist": {
@@ -183,6 +183,62 @@
     "message": "查看所有指南",
     "description": "View all guides button text"
   },
+  "homepage.quickstart.university": {
+    "message": "联系大学",
+    "description": "Quick start university title"
+  },
+  "homepage.quickstart.university.desc": {
+    "message": "与中国大学联系并管理你的招生事宜",
+    "description": "Quick start university description"
+  },
+  "homepage.quickstart.transportation": {
+    "message": "交通出行",
+    "description": "Quick start transportation title"
+  },
+  "homepage.quickstart.transportation.desc": {
+    "message": "了解公共交通，高效游览城市",
+    "description": "Quick start transportation description"
+  },
+  "homepage.quickstart.apps": {
+    "message": "必备应用",
+    "description": "Quick start apps title"
+  },
+  "homepage.quickstart.apps.desc": {
+    "message": "在中国日常生活必备的移动应用",
+    "description": "Quick start apps description"
+  },
+  "homepage.quickstart.healthcare": {
+    "message": "医疗健康",
+    "description": "Quick start healthcare title"
+  },
+  "homepage.quickstart.healthcare.desc": {
+    "message": "获取医疗服务并了解健康保险",
+    "description": "Quick start healthcare description"
+  },
+  "homepage.testimonials.title": {
+    "message": "学生评价",
+    "description": "Testimonials section title"
+  },
+  "homepage.testimonials.subtitle": {
+    "message": "听听已将中国视为家园的国际学生的分享",
+    "description": "Testimonials section subtitle"
+  },
+  "homepage.testimonials.quote1": {
+    "message": "Deepmate帮助我顺利度过了在清华的第一个学期。交通指南对于在北京出行非常有帮助！",
+    "description": "Testimonial 1 quote"
+  },
+  "homepage.testimonials.quote2": {
+    "message": "从开设银行账户到寻找本地美食地点，这个平台让我的中国生活变得轻松无忧。",
+    "description": "Testimonial 2 quote"
+  },
+  "homepage.testimonials.quote3": {
+    "message": "医疗健康部分帮助我了解如何使用中国医院。当我需要就医时，我感到自信和准备充分。",
+    "description": "Testimonial 3 quote"
+  },
+  "homepage.testimonials.quote4": {
+    "message": "作为一名国际学生，我对搬到上海感到紧张。Deepmate的应用指南和日常生活指南让一切都变得简单了。",
+    "description": "Testimonial 4 quote"
+  },
   "homepage.cta.title": {
     "message": "准备好开始你的冒险了吗？",
     "description": "CTA section title"
@@ -194,29 +250,5 @@
   "homepage.cta.button": {
     "message": "现在开始",
     "description": "CTA button text"
-  },
-  "homepage.features.guide.title": {
-    "message": "📚 综合指南",
-    "description": "Feature guide title"
-  },
-  "homepage.features.guide.desc": {
-    "message": "从申请到毕业，完整的分步指导。你需要的一切都在这里。",
-    "description": "Feature guide description"
-  },
-  "homepage.features.database.title": {
-    "message": "🏫 大学数据库",
-    "description": "Feature database title"
-  },
-  "homepage.features.database.desc": {
-    "message": "探索关于中国顶尖大学、课程和校园的详细信息。找到适合你学术目标的完美选择。",
-    "description": "Feature database description"
-  },
-  "homepage.features.community.title": {
-    "message": "🤝 社区支持",
-    "description": "Feature community title"
-  },
-  "homepage.features.community.desc": {
-    "message": "与其他国际学生联系，获得同伴支持并分享经验。你在这个旅程中并不孤单！",
-    "description": "Feature community description"
   }
 }
