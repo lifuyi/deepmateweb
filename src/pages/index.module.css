@@ -6,7 +6,7 @@
 /* ===== HERO SECTION ===== */
 .heroSection {
   position: relative;
-  height: 600px;
+  height: 560px;
   overflow: hidden;
   background: linear-gradient(to bottom, #f9fafb 0%, #ffffff 100%);
 }
@@ -100,7 +100,7 @@
 
 @media screen and (max-width: 996px) {
   .heroSection {
-    height: 500px;
+    height: 470px;
   }
 
   .heroTitle {
@@ -114,7 +114,7 @@
 
 @media screen and (max-width: 768px) {
   .heroSection {
-    height: 450px;
+    height: 410px;
   }
 
   .heroTitle {
